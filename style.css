@@ -1,9 +1,10 @@
+/* coloca uma linha abaixo do h1 */
 h1  {
     border-bottom-style: inset;
 }
-
+/* muda o estilo da tarefa quando ela esta selecionada */
 .tarefa-selecionada {
-    color: red;
+    color: #1f3c88;
     font-style: italic;
 
 }
@@ -11,3 +12,14 @@ h1  {
 .tarefa-normal {
     color: black;
 }
+/* Div da imagem,  a medida VH é necessario para usar a altura da viewport*/
+/* assim a div se estende ate o final da pagina */
+.col-sm-4 {
+    background-color:#f6f4f5;
+    min-height: 100vh;
+}
+/* cor dos botoes */
+.btn {
+    background-color: #a9bae6;
+}
+

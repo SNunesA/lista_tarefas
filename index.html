@@ -4,33 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Referencia ao Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Lista de Tarefas</title>
-     <!-- Template Stylesheet -->
-     <link href="style.css" rel="stylesheet">
+     <!-- Icone do site -->
+    <link rel="shotcut icon" href="auditoria.png" />
+    <!-- Referencia ao CSS -->
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-4">
-                <img src="https://cdn.pixabay.com/photo/2012/04/25/00/23/checklist-41335_960_720.png" alt="Tarefas" class="img-fluid">
+             <!-- Div da imagem -->
+            <div class="col-sm-4">    
+                <img src="Checklist.jpg" alt="Tarefas" class="img-fluid">
             </div>
-            <div class="col-sm-8" id="divQuadro">
+            <div class="col-sm-8" id="divQuadro" >
                 <h1>Tarefas do Dia</h1>
-                <form >
-                    <p> <label for="inTarefa">Tarefa:</label>
-                        <input type="text" class="form-control" id="inTarefa" required autofocus>
+                <form>
+                    <p> 
+                        <label for="inTarefa">Tarefa:</label>
+                        <!-- Recebe a tarefa digitada pelo user, o required faz obrigatorio a digitação de algum conteudo e o autofocus faz com que o mouse foque no campo quando a pagina recarrega-->
+                        <input type="text" class="form-control" id="inTarefa" required autofocus> 
                     </p>
-                    <!-- unicode tabela de caracteres -->
-                    <p><input type="submit" class="btn btn-primary" value="Adicionar &#10003;">
-                        <input type="button" class="btn btn-info" value="Selecionar &#8645;" id="btSelecionar">
-                        <input type="button" class="btn btn-danger" value="Retirar Selecionada &#10007;" id="btRetirar">
-                        <input type="button" class="btn btn-success" value="Gravar &#9673;" id="btGravar">
+                    <p>
+                        <!-- Botões, o código em hexa representa um caractere da tabela Unicode  -->
+                        <input type="submit" class="btn" value="Adicionar &#43;">
+                        <input type="button" class="btn" value="Selecionar &#8645;" id="btSelecionar">
+                        <input type="button" class="btn" value="Retirar Selecionada(s) &#10007;" id="btRetirar">
+                        <input type="button" class="btn" value="Gravar &#9673;" id="btGravar">
                     </p>
                 </form>
+                
+                
             </div>
         </div>
     </div>
+     <!-- Referencia ao Javascript -->
     <script src="lista.js"></script>
 </body>
 </html>
